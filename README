@@ -1,20 +1,19 @@
-Multi-subject, multi-modal (sMRI+EEG) neuroimaging dataset
-on face processing. Original data described at https://www.nature.com/articles/sdata20151
-This is repackaged version of the EEG data in EEGLAB format. The data has gone through
-minimal preprocessing including (see wh_extracteeg_BIDS.m):
-- Ignoring fMRI and MEG data (sMRI preserved for EEG source localization)
-- Extracting EEG channels out of the MEG/EEG fif data
-- Adding fiducials
-- Renaming EOG and EKG channels
-- Extracting events from event channel
-- Removing spurious events 5, 6, 7, 13, 14, 15, 17, 18 and 19
-- Removing spurious event 24 for subject 3 run 4
-- Renaming events taking into account button assigned to each subject
-- Correcting event latencies (events have a shift of 34 ms)
-- Resampling data to 250 Hz (this is a step that is done because
-  this dataset is used as tutorial for EEGLAB and need to be lightweight
-- Removing event fields urevent and duration 
-- Filling up empty fields for events boundary and stim_file.
-- Saving as EEGLAB .set format
+This dataset consists of the MEEG (sMRI+MEG+EEG) portion of the multisubject, multimodal face processing dataset facing processing dataset (ds000117). This dataset was originally acquired and shared by Daniel Wakeman and Richard Hensen (https://pubmed.ncbi.nlm.nih.gov/25977808/). The data has been repackaged in EEGLAB format and has undergone minimal preprocessing as well as reorganization and annotation of the dataset events. The MEG and EEG were simultaneously recorded, and sMRI was preserved for EEG source localization.
+
+The preprocessing, which was performed using the wh_extracteeg_BIDS.m located in the code directory, includes the following steps:
+- Ignore MRI data except for sMRI.
+- Extract  EEG channels out of the MEG/EEG fif data
+- Add fiducials
+- Rename EOG and EKG channels
+- Extract events from event channel
+- Remove spurious events 5, 6, 7, 13, 14, 15, 17, 18 and 19
+- Remove spurious event 24 for subject 3 run 4
+- Rename events taking into account button assigned to each subject
+- Correct event latencies (events have a shift of 34 ms)
+- Resample data to 250 Hz (this step is performed because
+  this dataset is used in a tutorial for EEGLAB and needs to be lightweight)
+- Remove event fields urevent and duration 
+- Fill  empty fields for events boundary and stim_file.
+- Save as EEGLAB .set format
 
 Ramon Martinez, Dung Truong, Kay Robbins, Scott Makeig, Arnaud Delorme (UCSD, La Jolla, CA, USA)
