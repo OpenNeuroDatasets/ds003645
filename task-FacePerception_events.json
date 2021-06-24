@@ -14,7 +14,8 @@
       "right_press": "Experimental participant presses a key with right index finger.",
       "left_sym": "Pressing key with left index finger means a face with above average symmetry.",
       "right_sym": "Pressing key with right index finger means a face with above average symmetry.",
-      "setup": "Mark start of experiment and document applicable metadata."
+      "setup": "Mark start of experiment and document applicable metadata.",
+      "4352": "A trigger code indicating that the user did an additional key press after response."
     },
     "HED": {
       "show_face": "Sensory-event, Experimental-stimulus, (Def/Face-image, Onset), (Def/Blink-inhibition-task,Onset),(Def/Cross-only, Offset)",
@@ -24,7 +25,8 @@
       "right_press": "Agent-action, Participant-response, Def/Press-right-finger",
       "left_sym": "Experiment-structure, (Def/Left-sym-cond, Onset)",
       "right_sym": "Experiment-structure, (Def/Right-sym-cond, Onset)",
-      "setup": "Experiment-structure, (Def/Initialize-recording, Onset)"
+      "setup": "Experiment-structure, (Def/Initialize-recording, Onset)",
+      "4352": "Agent-action, Indeterminate, (Press, Keyboard-key)"
     }
   },
   "face_type": {
@@ -61,7 +63,7 @@
     "Description": "Metadata dictionary for gathering sensory definitions",
     "HED": {
       "cross_only_def": "(Definition/Cross-only, (Visual, (Foreground-view, (White, Cross), (Center-of, Screen)), (Background-view, Black), Description/A white fixation cross on a black background in the center of the screen.))",
-      "face_image_def": "(Definition/Face-image, (Visual, (Foreground-view, ((Image, Face, Hair), Color/Achromatic), ((White, Cross), (Center-of, Screen))), (Background-view, Black), Description/A happy or neutral face in frontal or three-quarters frontal pose with long hair cropped presented as an achromatic foreground image on a black background with a white fixation cross superposed.))",
+      "face_image_def": "(Definition/Face-image, (Visual, (Foreground-view, ((Image, Face, Hair), Color/Grayscale), ((White, Cross), (Center-of, Screen))), (Background-view, Black), Description/A happy or neutral face in frontal or three-quarters frontal pose with long hair cropped presented as an achromatic foreground image on a black background with a white fixation cross superposed.))",
       "circle_only_def": "(Definition/Circle-only, (Visual, (Foreground-view, ((White, Circle), (Center-of, Screen))), (Background-view, Black), Description/A white circle on a black background in the center of the screen.))"
     }
   },
