@@ -1,5 +1,6 @@
+2.0.0 2022-01-25
+  - - Add original MEG recordings - Update HED annotations - Restore to original sampling rate
 Revision history for Face Recognition experiment by Wakeman-Henson
 
 version 1.0 - April 2021
- - Initial release of EEG data in this experiment for HED education purposes 
-
+ - Initial release of EEG data in this experiment for HED education purposes
