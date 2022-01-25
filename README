@@ -21,7 +21,3 @@ The EEG preprocessing, which was performed using the `wh_extracteeg_BIDS.m` loca
 
 **Data curators:**
 Dung Truong, Ramon Martinez, Scott Makeig, Arnaud Delorme (UCSD, La Jolla, CA, USA), Kay Robbins (UTSA, San Antonio, TX, USA)
-
-**HED annotation reference:**
-Robbins, Kay, Dung Truong, Stefan Appelhoff, Arnaud Delorme, and Scott Makeig. "Capturing the nature of events and event context using Hierarchical Event Descriptors (HED)", bioRXiv, June 14, 2021.
-
