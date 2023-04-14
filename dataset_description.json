@@ -5,15 +5,22 @@
     "License": "CC0",
     "Authors": [
         "Daniel G. Wakeman",
-        "Richard N Henson"
+        "Richard N Henson",
+        "Dung Truong (curation)",
+        "Kay Robbins (curation)",
+        "Scott Makeig (curation)",
+        "Arno Delorme (curation)"
     ],
     "ReferencesAndLinks": [
         "Wakeman, D., Henson, R. (2015). A multi-subject, multi-modal human neuroimaging dataset. Sci Data 2, 150001. https://doi.org/10.1038/sdata.2015.1",
-        "Robbins, K., Truong, D., Appelhoff, S., Delorme, A., & Makeig, S. (2021). Capturing the nature of events and event context using Hierarchical Event Descriptors (HED). In press for NeuroImage Special Issue Practice in MEEG. https://authors.elsevier.com/sd/article/S1053-8119(21)01038-7.",
-        "Robbins, K., Truong, D., Jones, A., Callanan, I., & Makeig, S. (2021). Building FAIR functionality: Annotating events in time series data using Hierarchical Event Descriptors (HED). In press for Neuroinformatics Special Issue Building the NeuroCommons. https://doi.org/10.31219/osf.io/5fg73."
+        "Robbins, K., Truong, D., Appelhoff, S., Delorme, A., & Makeig, S. (2021). Capturing the nature of events and event context using Hierarchical Event Descriptors (HED). In press for NeuroImage Special Issue Practice in MEEG. NeuroImage 245 (2021) 118766. Online: https://www.sciencedirect.com/science/article/pii/S1053811921010387.",
+        "Robbins, K., Truong, D., Jones, A., Callanan, I., & Makeig, S. (2021). Building FAIR functionality: Annotating events in time series data using Hierarchical Event Descriptors (HED). Neuroinformatics Special Issue Building the NeuroCommons. Neuroinformatics https://doi.org/10.1007/s12021-021-09537-4. Online: https://link.springer.com/article/10.1007/s12021-021-09537-4."
     ],
     "Funding": [
-        "This work was supported by the UK Medical Research Council (MC_A060_5PR10) and Elekta Ltd."
+        "Experiment was supported by the UK Medical Research Council (MC_A060_5PR10) and Elekta Ltd.",
+        "Curation was supported by: Army Research Laboratory W911NF-10-2-0022, NIH R01 EB023297-03, NIH R01 NS047293-l4, and NIH R24 MH120037-01."
     ],
-    "DatasetDOI": "doi:10.18112/openneuro.ds003645.v2.0.1"
+    "DatasetDOI": "10.18112/openneuro.ds003645.v1.0.0",
+	"EthicsApprovals": "The study was approved by Cambridge University Psychological Ethics Committee. Written informed
+consent was obtained from each participant prior to and following each phase of the experiment."
 }
