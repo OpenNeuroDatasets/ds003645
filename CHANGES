@@ -1,3 +1,6 @@
+2.0.1 2023-04-14
+  - HEDVersion was updated to 8.1.0
+  - BIDS version corrected to 1.8.0
 2.0.0 2022-01-25
   - - Add original MEG recordings - Update HED annotations - Restore to original sampling rate
 Revision history for Face Recognition experiment by Wakeman-Henson
