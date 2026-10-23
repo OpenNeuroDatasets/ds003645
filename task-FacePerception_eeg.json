@@ -1,0 +1,10 @@
+{
+    "TaskName": "FacePerception",
+    "SamplingFrequency": 1100,
+    "PowerLineFrequency": 50,
+    "EEGReference": "common",
+    "SoftwareFilters": "n/a",
+    "EEGChannelCount": 70,
+    "EEGPlacementScheme": "extended 10-10% system",
+    "RecordingType": "continuous"
+}

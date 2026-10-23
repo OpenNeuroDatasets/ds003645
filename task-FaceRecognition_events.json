@@ -13,9 +13,9 @@
   "button_press": {
     "Description": "The button press indicating if subject recognized the faces they saw in the MEG experiment",
     "Levels": {
-      "x1": "Not known.",
-      "x2": "Familiar.",
-      "x3": "Known."
+      "1": "Not known.",
+      "2": "Familiar.",
+      "3": "Known."
     }
   },
   "stim_file": {

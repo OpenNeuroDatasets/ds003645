@@ -9,7 +9,7 @@
  "EOGChannelCount": 2,
  "ECGChannelCount": 1,
  "EMGChannelCount": 0,
- "MiscChannelCount": 12,
+ "MiscChannelCount": 13,
  "TriggerChannelCount": 3,
  "PowerLineFrequency": 50,
  "HeadCoilFrequency": [293,307,314,321,328],
@@ -22,11 +22,7 @@
  "SubjectArtefactDescription": "None",
  "DigitizedLandmarks": true,
  "DigitizedHeadPoints": true,
- "SoftwareFilters": {
-  "SpatialCompensation": {
-   "None": []
-  }
- },
+ "SoftwareFilters": "n/a",
  "InstitutionName": "MRC Cognition & Brain Sciences Unit",
  "InstitutionAddress": "15 Chaucer Road, Cambridge, UK"
 }

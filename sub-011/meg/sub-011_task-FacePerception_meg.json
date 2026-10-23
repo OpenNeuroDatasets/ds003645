@@ -9,7 +9,7 @@
  "EOGChannelCount": 2,
  "ECGChannelCount": 1,
  "EMGChannelCount": 0,
- "MiscChannelCount": 12,
+ "MiscChannelCount": 13,
  "TriggerChannelCount": 3,
  "PowerLineFrequency": 50,
  "HeadCoilFrequency": [293,307,314,321,328],
@@ -24,7 +24,7 @@
  "DigitizedHeadPoints": true,
  "SoftwareFilters": {
   "SpatialCompensation": {
-   "None": []
+   "GradientOrder": 0
   }
  },
  "InstitutionName": "MRC Cognition & Brain Sciences Unit",

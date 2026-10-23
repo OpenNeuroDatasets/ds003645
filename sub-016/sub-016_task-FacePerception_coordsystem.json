@@ -1,0 +1,5 @@
+{
+ "EEGCoordinateSystem": "ElektaNeuromag",
+ "EEGCoordinateUnits": "mm",
+ "EEGCoordinateSystemDescription": "70 Easycap sites, roughly corresponding to extended 10-20 system: see http://imaging.mrc-cbu.cam.ac.uk/meg/VectorviewDescription#EEGlabels The nose points along +Y: the nasion lies on the +Y axis, and the left and right preauricular points lie on the -X and +X axes."
+}
