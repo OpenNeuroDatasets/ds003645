@@ -5,7 +5,7 @@
  "EEGCoordinateSystem": "ElektaNeuromag",
  "EEGCoordinateUnits": "mm",
  "EEGCoordinateSystemDescription": "70 Easycap sites, roughly corresponding to extended 10-20 system: see http://imaging.mrc-cbu.cam.ac.uk/meg/VectorviewDescription#EEGlabels The nose points along +Y: the nasion lies on the +Y axis, and the left and right preauricular points lie on the -X and +X axes.",
- "DigitizedHeadPoints": "sub-11_ses-meg_headshape.pos",
+ "DigitizedHeadPoints": "sub-013_headshape.pos",
  "DigitizedHeadPointsCoordinateSystem": "ElektaNeuromag",
  "DigitizedHeadPointsCoordinateUnits": "mm",
  "DigitizedHeadPointsCoordinateSystemDescription": "Headpoints include arcs of points along front of head and around nose, as well as centre of 70 EEG electrodes spread across scalp, which also help define headshape. Beware that nose points can bias coregistration with MRI if MRI image does not include all of the nose.",
