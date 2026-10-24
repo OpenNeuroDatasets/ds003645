@@ -1,0 +1,13 @@
+2.1.0 2026-10-24
+  -   - Converted the 108 EEG recordings from EEGLAB .set and .fdt to BDF   - Updated the EEG file names in the scans.tsv files to the BDF files   - Moved the FacePerception events files beside the EEG and MEG runs   - Added a RecordingDuration sidecar for each EEG run and a task-level EEG sidecar   - Added the sample column to the events sidecar   - Added the empty-room row to participants.tsv   - Converted the electrode coordinates from centimetres to millimetres   - Documented the nose direction as +Y in the coordinate system files, and added coordinate system files for sub-005 and sub-016   - Set HEDVersion to 8.5.0   - Regrouped repeated HED tags with curly braces in the events sidecar (no tags added or removed)   - Keyed the value and button_press levels by their codes, corrected the descriptions of value levels 1 to 4, and added levels for the codes 4, 101, and 102   - Set SoftwareFilters to n/a for EEG and for the empty-room MEG sidecar   - Added MEG sidecars for sub-005 and sub-016, with AssociatedEmptyRoom absent   - Set MiscChannelCount to 13 and SoftwareFilters to GradientOrder 0 in the MEG sidecars, as in ds000117
+2.0.2 2023-04-14
+  - Added EthicsApprovals
+2.0.1 2023-04-14
+  - HEDVersion was updated to 8.1.0
+  - BIDS version corrected to 1.8.0
+2.0.0 2022-01-25
+  - - Add original MEG recordings - Update HED annotations - Restore to original sampling rate
+Revision history for Face Recognition experiment by Wakeman-Henson
+
+version 1.0 - April 2021
+ - Initial release of EEG data in this experiment for HED education purposes
