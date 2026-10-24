@@ -1,0 +1,33 @@
+**Introduction:**
+This dataset consists of the MEEG (sMRI+MEG+EEG) portion of the multi-subject, multi-modal face processing dataset (ds000117). This dataset was originally acquired and shared by Daniel Wakeman and Richard Henson (https://pubmed.ncbi.nlm.nih.gov/25977808/). The MEG and EEG data were simultaneously recorded; the sMRI scans were preserved to support M/EEG source localization. Following event log augmentation, reorganization, and Hierarchical Event Descriptors (HED) annotation, the EEG data were repackaged in EEGLAB format and, in this version, converted to BioSemi Data Format (BDF).
+
+**Overview of the experiment:**
+Eighteen participants completed two recording sessions spaced three months apart – one session recorded fMRI  and the other simultaneously recorded MEG and EEG data. During each session, participants performed the same simple perceptual task, responding to presented photographs of famous, unfamiliar, and scrambled faces by pressing one of two keyboard keys to indicate a subjective yes or no decision as to the relative spatial symmetry of the viewed face. Famous faces were feature-matched to unfamiliar faces; half the faces were female. The two sessions (MEEG, fMRI) had different organizations of event timing and presentation because of technological requirements of the respective imaging modalities. Each individual face was presented twice during the session. For half of the presented faces, the second presentation followed immediately after the first. For the other half, the second presentation was delayed by 5-15 face presentations.
+
+**Preprocessing:**
+The EEG preprocessing, which was performed using the `wh_extracteeg_BIDS.m` located in the code directory, includes the following steps:
+* Ignore MRI data except for sMRI.
+* Extract  EEG channels out of the MEG/EEG fif data
+* Add fiducials
+* Rename EOG and EKG channels
+* Extract events from event channel
+* Add button press events!
+* Remove spurious event types 5, 6, 7, 13, 14, 15, 17, 18 and 19
+* Remove spurious event types 24 for subject 3 run 4
+* Correct event latencies (events have a shift of 34 ms)
+* Add HED event annotations -- see Robbins et al. (2021)
+* Remove event fields `urevent` and `duration`
+* Save as EEGLAB .set format (the earlier releases; this version converts the recordings to BDF, see Data format)
+
+**Data format:**
+The EEG recordings are in BioSemi Data Format (BDF), one file per run (108 recordings), in the `eeg` folder of each subject.
+They were converted from the EEGLAB `.set` and `.fdt` files with biosigio 1.2.13 (commit 9c97f9d).
+The converter dropped the independent component analysis weights, the rejection information, and the epoch information, because the Brain Imaging Data Structure (BIDS) holds raw data only.
+The EEG samples are unchanged except for rounding to the nearest level of the BDF format, which was checked for every channel of every recording to be within half a least significant bit.
+The events of each run are in the `events.tsv` file beside its EEG recording and beside its MEG recording.
+The MEG recordings are unchanged, in Elekta Neuromag `.fif` format.
+The electrode coordinates are in millimetres, and the nose points along +Y.
+The event annotations use HED version 8.5.0, where the earlier README gave 8.0.0.
+
+**Data curators:**
+Dung Truong, Ramon Martinez, Scott Makeig, Arnaud Delorme (UCSD, La Jolla, CA, USA), Kay Robbins (UTSA, San Antonio, TX, USA)
